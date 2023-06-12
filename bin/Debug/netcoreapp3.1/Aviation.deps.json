@@ -1,0 +1,94 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aviation/1.0.0": {
+        "dependencies": {
+          "ATC": "1.0.0",
+          "Aircraft": "1.0.0",
+          "FlightPlanProcessing": "1.0.0",
+          "spatial": "1.0.0"
+        },
+        "runtime": {
+          "Aviation.dll": {}
+        }
+      },
+      "Aircraft/1.0.0": {
+        "dependencies": {
+          "FMC": "1.0.0",
+          "spatial": "1.0.0"
+        },
+        "runtime": {
+          "Aircraft.dll": {}
+        }
+      },
+      "ATC/1.0.0": {
+        "dependencies": {
+          "Aircraft": "1.0.0",
+          "FMC": "1.0.0"
+        },
+        "runtime": {
+          "ATC.dll": {}
+        }
+      },
+      "FlightPlanProcessing/1.0.0": {
+        "dependencies": {
+          "spatial": "1.0.0"
+        },
+        "runtime": {
+          "FlightPlanProcessing.dll": {}
+        }
+      },
+      "FMC/1.0.0": {
+        "dependencies": {
+          "FlightPlanProcessing": "1.0.0",
+          "spatial": "1.0.0"
+        },
+        "runtime": {
+          "FMC.dll": {}
+        }
+      },
+      "spatial/1.0.0": {
+        "runtime": {
+          "spatial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aviation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aircraft/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ATC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FlightPlanProcessing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FMC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "spatial/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

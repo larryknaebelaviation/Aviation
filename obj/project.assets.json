@@ -1,0 +1,185 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aircraft/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FMC": "1.0.0",
+          "spatial": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Aircraft.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aircraft.dll": {}
+        }
+      },
+      "ATC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Aircraft": "1.0.0",
+          "FMC": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ATC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ATC.dll": {}
+        }
+      },
+      "FlightPlanProcessing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "spatial": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FlightPlanProcessing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlightPlanProcessing.dll": {}
+        }
+      },
+      "FMC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FlightPlanProcessing": "1.0.0",
+          "spatial": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FMC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FMC.dll": {}
+        }
+      },
+      "spatial/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/spatial.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/spatial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aircraft/1.0.0": {
+      "type": "project",
+      "path": "../Aircraft/Aircraft.csproj",
+      "msbuildProject": "../Aircraft/Aircraft.csproj"
+    },
+    "ATC/1.0.0": {
+      "type": "project",
+      "path": "../ATC/ATC.csproj",
+      "msbuildProject": "../ATC/ATC.csproj"
+    },
+    "FlightPlanProcessing/1.0.0": {
+      "type": "project",
+      "path": "../FileProcessing/FlightPlanProcessing.csproj",
+      "msbuildProject": "../FileProcessing/FlightPlanProcessing.csproj"
+    },
+    "FMC/1.0.0": {
+      "type": "project",
+      "path": "../FMC/FMC.csproj",
+      "msbuildProject": "../FMC/FMC.csproj"
+    },
+    "spatial/1.0.0": {
+      "type": "project",
+      "path": "../Spatial/spatial.csproj",
+      "msbuildProject": "../Spatial/spatial.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "ATC >= 1.0.0",
+      "Aircraft >= 1.0.0",
+      "FlightPlanProcessing >= 1.0.0",
+      "spatial >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\larry\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\pro\\aviation\\Aviation\\Aviation.csproj",
+      "projectName": "Aviation",
+      "projectPath": "C:\\pro\\aviation\\Aviation\\Aviation.csproj",
+      "packagesPath": "C:\\Users\\larry\\.nuget\\packages\\",
+      "outputPath": "C:\\pro\\aviation\\Aviation\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\larry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\pro\\aviation\\Aircraft\\Aircraft.csproj": {
+              "projectPath": "C:\\pro\\aviation\\Aircraft\\Aircraft.csproj"
+            },
+            "C:\\pro\\aviation\\ATC\\ATC.csproj": {
+              "projectPath": "C:\\pro\\aviation\\ATC\\ATC.csproj"
+            },
+            "C:\\pro\\aviation\\FileProcessing\\FlightPlanProcessing.csproj": {
+              "projectPath": "C:\\pro\\aviation\\FileProcessing\\FlightPlanProcessing.csproj"
+            },
+            "C:\\pro\\aviation\\Spatial\\spatial.csproj": {
+              "projectPath": "C:\\pro\\aviation\\Spatial\\spatial.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
